@@ -1,8 +1,10 @@
+参考地址：https://www.51cto.com/article/761976.html
+
 vuepress-theme-hope
 
 node 环境：版本 20.10.0    npm版本：10.2.4
 
-创建项目模板
+### 创建项目模板
 
 ```bash
 npm init vuepress-theme-hope my-docs
@@ -31,7 +33,7 @@ Ok to proceed? (y) y
 ? 选择你想使用的源 当前源
 ```
 
-项目运行
+### 项目运行
 
 ```bash
 pnpm docs:dev 启动开发服务器
@@ -39,7 +41,7 @@ pnpm docs:build 构建项目并输出
 pnpm docs:clean-dev 清除缓存并启动开发服务器
 ```
 
-推送到 GitHub
+### 推送到 GitHub
 
 首先在 GitHub 创建仓库
 
@@ -73,3 +75,15 @@ git add .
 git commit -m "update content"
 git push -f origin master  # 注意 -f 是强制推送
 ```
+
+### GitHub 第一次拉取代码
+
+```bash
+# 在项目文件夹下打开控制面板，安装包管理器
+npm install -g pnpm
+# 安装依赖
+pnpm install
+# 运行
+pnpm docs:dev
+```
+
