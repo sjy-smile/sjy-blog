@@ -41,3 +41,30 @@ pnpm docs:clean-dev 清除缓存并启动开发服务器
 
 推送到 GitHub
 
+首先在 GitHub 创建仓库
+
+```bash
+# 初始化本地仓库，项目创建完成，在项目文件夹
+git add .
+# 添加提交注释
+git commit -m "project init"
+# 添加到远程分支
+git remote add origin 远端分支地址
+# 如果出现远端分支错误，error: remote origin already exists. 执行以下命令
+# 删除已存在的远程配置
+git remote rm origin
+# 重新添加
+git remote add origin 远端分支地址
+# 将本地项目上传到 GitHub
+git push -f origin master
+```
+
+上传到GitHub后分支出现 ：` (master|REBASE 1/1)`
+
+```bash
+# 取消合并
+git rebase --abort
+# 继续执行
+git rebase --continue
+```
+
