@@ -67,4 +67,9 @@ git rebase --abort
 # 继续执行
 git rebase --continue
 ```
-
+之后再次修改一次执行以下命令推动到 GitHub
+```bash
+git add .
+git commit -m "update content"
+git push -f origin master  # 注意 -f 是强制推送
+```
