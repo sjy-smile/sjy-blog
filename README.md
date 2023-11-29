@@ -25,7 +25,7 @@ Ok to proceed? (y) y
 ? 设置应用版本号 2.0.0
 ? 设置应用描述 A project of vuepress-theme-hope
 ? 设置协议 MIT
-? 项目需要用到多语言么? y
+? 项目需要用到多语言么? n
 ? 是否需要一个自动部署文档到 GitHub Pages 的工作流？ y
 ? 你想要创建什么类型的项目？ blog
 生成模板...
@@ -74,6 +74,7 @@ git rebase --continue
 git add .
 git commit -m "update content"
 git push -f origin master  # 注意 -f 是强制推送
+git push origin master  # 推送到远端分支master
 ```
 
 ### GitHub 第一次拉取代码
@@ -86,4 +87,6 @@ pnpm install
 # 运行
 pnpm docs:dev
 ```
+
+### 首页配置
 
